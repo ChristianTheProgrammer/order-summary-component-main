@@ -24,12 +24,291 @@
 
 
 
+* {
+     font-family: Red Hat Display;
+     font-size: 16px;
+}
+body {
+background-image: url("/images/pattern-background-mobile.svg");
+background-repeat: no-repeat;
+background-size: 2000px;
+display: flex;
+flex-direction: column;
+align-content: center;
+margin-top: 8%;
+padding: 4%;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
 
+main{
+     display: inline-block;
+     display: flex;
+     flex-direction: column;
+     align-items:center;
+     justify-content: space-between;
+     height: 600px;
+     background-color: white;
+     border-top-right-radius: 18px;
+     border-top-left-radius: 18px;
+     border-bottom-left-radius:18px ;
+     border-bottom-right-radius: 18px;
+}
 
+img { 
+     border-top-right-radius: 18px;
+     border-top-left-radius: 18px;
+     width: 100%;
+    
+}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+h1{ 
+    font-size: 1.5rem; 
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+p{
+     text-align: center;
+     font-size: 1.1rem;
+     line-height: 140%;
+     font-weight: 500;
+     color: hsl(224, 23%, 55%);
+     width: 300px;
+     
+}
+.plan{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 300px; 
+     background-color: #f8f8f8fe;
+     border-radius: 8px;
+}
+
+h3{
+     font-weight: 900;
+     margin-bottom: 4px;
+}
+h4{
+     margin-right: 12px;
+     color: white;
+     text-decoration: none;
+     font-style: none;
+     font-weight: 900;
+}
+
+h4 a {
+     color: #4738C0;
+}
+
+h4 a:hover{
+     text-decoration: none;
+     color: #766CF1;
+}
+
+
+span{
+color: hsl(224, 23%, 55%);
+
+}
+.plan img{ 
+     width: 70px;
+     padding: 5%;
+     margin-right: -50px;
+
+}
+
+
+h2{
+     width: 300px;
+     border-radius: 8px;
+     height: 8%;
+     text-align: center;
+     background-color:  hsl(245, 75%, 52%);
+     color: white;
+     box-shadow: 0 20px 20px hsl(245, 75%, 52%, 20%);
+     padding-top: 4%;
+     transition: background-color 0.3s ease-in-out;
+
+}
+
+h2 a{
+     text-decoration: none;
+     color: white;
+
+}
+
+h2 a:hover {
+     transform: scale(1.2);
+     
+   }
+   
+h2:hover {
+     background-color: #766CF1;
+   }
+
+h5{
+margin-top: -20px;
+padding-bottom: 20px;
+color: hsla(0, 0%, 0%, 0.6);
+font-weight: 700;
+}
+
+h5 a:hover{
+     color: rgb(0, 0, 0);
+     font-weight: 900;
+}
+
+h5 a{
+     text-decoration: none;
+     color: hsla(0, 0%, 0%, 0.6);
+
+}
+
+@media(min-width: 450px){
+   
+     body{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0%;  
+          margin-top: 5%;
+          background-image: url("/images/pattern-background-desktop.svg");
+          background-position-x: center;
+          background-size:cover;
+          background-position: center -300px;
+          background-color: #E0E8FF;
+  
+     }
+     main{
+     justify-content: space-evenly;
+      height: 680px;
+     }
+
+
+main > img{ 
+          border-top-right-radius: 18px;
+          border-top-left-radius: 18px;
+          width: 100%;
+          margin-top: -9%;
+     }
+     /* SYTLES FOR ORDER SUMMARY */
+
+h1{ 
+     font-size: 1.8rem; 
+     font-weight: 900;
+     color: hsl(223, 47%, 23%);
+ }
+ 
+ p{
+      text-align: center;
+      font-size: 1rem;
+      line-height: 140%;
+      font-weight: 500;
+      color: hsl(224, 23%, 55%);
+      width: 300px;
+      
+ }
+ .plan{
+      display: flex;
+      align-items: center;
+      justify-content: none;
+      width: 353px;
+      background-color: #f8f8f8fe;
+      border-radius: 8px;
+ }
+ 
+ h3{
+      font-weight: 900;
+      margin-bottom: 4px;
+ }
+ h4{
+      margin-right: 12px;
+      color: white;
+      text-decoration: none;
+      font-style: none;
+      font-weight: 900;
+ }
+ 
+ 
+ span{
+ color: hsl(224, 23%, 55%);
+ 
+ }
+ .plan img{ 
+     width: 94px;
+     padding: 5%;
+      margin-right: -50px;
+ 
+ }
+ .Annual{
+     margin-left: -10%;
+ }
+ 
+ h2{
+      width: 353px;
+      border-radius: 8px;
+      height: 6%;
+      text-align: center;
+      background-color:  hsl(245, 75%, 52%);
+      color: white;
+      box-shadow: 0 20px 20px hsl(245, 75%, 52%, 20%);
+      padding-top: 3%;
+ }
+ 
+ h2 a{
+      text-decoration: none;
+      color: white;
+ 
+ }
+ 
+ h5{
+ margin-top: -20px;
+ padding-bottom: 20px;
+ color: hsla(0, 0%, 0%, 0.6);
+ font-weight: 700;
+ font-size: .9rem;
+ 
+ }
+ 
+ h5 a{
+      text-decoration: none;
+      color: hsla(0, 0%, 0%, 0.6);
+ 
+ }
+
+}
+     
+
+
+
+
+
+
+@media (max-width: 330px){
+     p{
+          width: 238px;
+
+     }
+
+     .plan{
+          width: 224px;
+          font-size: 10px;
+     }
+
+     .plan img {
+          width: 53px;
+     }
+
+     h2 {
+          width: 230px;
+     }
+     
+}
